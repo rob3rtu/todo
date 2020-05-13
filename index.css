@@ -1,0 +1,143 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #252422;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.big-list {
+    position: relative;
+    background: #403D39;
+    border-radius: 36px;
+    min-height: 90vh;
+    min-width: 550px;
+    text-align: center;
+}
+
+h2 {
+    width: 70%;
+    text-align: left;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+.done-element {
+    text-decoration: line-through #252422;
+}
+
+form {
+    width: 70%;
+}
+
+input {
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    background: none;
+    margin: none;
+    outline: none;
+    font-size: 1.5em;
+    border: none;
+}
+
+ img {
+    cursor: pointer;
+}
+
+.list-elements {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    color: #FFFCF2;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 4rem;
+    padding: 30px;
+}
+
+.new {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.big-list-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.done {
+    position: absolute;
+    left: 25px;
+    top: -10px;
+    fill: white;
+    display: none;
+    pointer-events: none;
+
+}   
+
+.done-active {
+    display: block;
+}
+
+@media screen and ( max-width: 768px ) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .big-list {
+        width: 95%;
+        min-width: 0px;
+    }
+
+    .new {
+        width: 7%;
+    }
+}
+
+
+@media screen and ( max-width: 500px ) {
+    
+    h1 {
+        font-size: 3rem;
+    }
+
+    .checkbox {
+        width: 7%;
+    }
+
+    h2, input {
+        font-size: 1.2rem;
+    }
+
+    .new {
+        width: 9%;
+    }
+
+    .done {
+        width: 8%;
+        left: 5%;
+        top: -20%;
+    }
+}
+
+@media screen and ( max-width: 350px ) {
+    .done {
+        top: -15%;
+    }
+}
