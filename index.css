@@ -5,7 +5,7 @@
 }
 
 body {
-    background: #252422;
+    background: #252422 !important;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -15,7 +15,7 @@ body {
 
 .big-list {
     position: relative;
-    background: #403D39;
+    background: #403D39 !important;
     border-radius: 36px;
     min-height: 90vh;
     min-width: 550px;
